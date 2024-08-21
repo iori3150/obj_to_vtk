@@ -6,14 +6,11 @@ Convert object files to vtk files
 pip install vtk
 ```
 
-## How to Use
-1. Write input and output directories to configuration file.
-    ```json
-    {
-        "input_directory": "path_to_your_obj_files",
-        "output_directory": "path_to_save_vtk_files"
-    }
-
+## Usage
+1. Change input and output directories in the python script
+    ```python
+    input_directory = "./"  # Relative path to obj files
+    output_directory = "./"  # Relative path to save vtu files
     ```
 1. Run the python script
     ```bash
