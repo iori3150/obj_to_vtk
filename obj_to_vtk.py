@@ -5,12 +5,12 @@ import sys
 
 import vtk
 
-# Load config file
-config_file = "config.json"
-with open(config_file, "r") as file:
-    config = json.load(file)
-input_directory = config.get("input_directory")
-output_directory = config.get("output_directory")
+input_directory = "./"  # Relative path to obj files
+output_directory = "./"  # Relative path to save vtu files
+
+script_directory = os.path.dirname(os.path.realpath(__file__))
+input_directory = os.path.join(script_directory, input_directory)
+output_directory = os.path.join(script_directory, output_directory)
 
 # Check path existance
 if not os.path.exists(input_directory):

@@ -1,4 +1,0 @@
-{
-    "input_directory": "path_to_your_obj_files",
-    "output_directory": "path_to_save_vtk_files"
-}
